@@ -1,0 +1,20 @@
+int.toString(number) converts the number in to base number and outputs this as a string
+eg 4.toString(2) is "100"
+
+string.parseInt(number) does the opposite, and assumes that the string is in base number and returns the equivalent int
+
+array.reduce((result, sum) => sum + result, initialValue) is an aggregator
+
+Array.from("56") returns ["5", "6"]
+
+Array.from({length: 2}, (n, i) => i) return [0, 1], useful way of creating arrays with calculated contents
+
+Adolphe quetelet created body mass index bmi to show which people were malnourished. He showed that bmi and similar things are normally distributed.
+
+Math.log10(100) is 2
+
+count(1) in an sql statement does a count on the first column. This makes it easier to do a count on a complicated calculated column (don't have to do the calculation again in the count expression)
+
+Benfords law of first digits for bank accounts shows an exponential decrease. because changes get bigger as the amount increases, so 1 + 11 % interest is 1.11 (so first digit still 1), whereas 9 + 11% is 10, so first digit goes back to 1.
+
+browsers have 6 concurrent connections, after that you have to wait for one to return. Thus it can be useful to prioritise particular requests. Saw some code for intercepting the fetch method and changing the order in which the fetch calls were made based on priority

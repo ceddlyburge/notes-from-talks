@@ -18,3 +18,5 @@ count(1) in an sql statement does a count on the first column. This makes it eas
 Benfords law of first digits for bank accounts shows an exponential decrease. because changes get bigger as the amount increases, so 1 + 11 % interest is 1.11 (so first digit still 1), whereas 9 + 11% is 10, so first digit goes back to 1.
 
 browsers have 6 concurrent connections, after that you have to wait for one to return. Thus it can be useful to prioritise particular requests. Saw some code for intercepting the fetch method and changing the order in which the fetch calls were made based on priority
+
+I met Jacob from poland, xavier javascript guy and the contractor guy whose name I don't know

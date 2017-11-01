@@ -1,0 +1,35 @@
+# Elm / json:api
+
+da_wehner
+
+Bikeshedding is arguing about things that don't matter, eg colour of the bike shed
+
+api for elm packages
+
+starts simple
+then support xml and json
+then supprt only getting specific fields
+the think about returning errors
+/package or /packages
+filtering
+sorting
+paging
+
+http://jsonapi.org
+a standard to agree all this stuff so don't need to argue
+
+https://github.com/noahzgordon/elm-jsonapi
+
+# Guerilla Elm
+
+Used at microsoft for a dashboard that couldn't fail
+then used for a startup
+elm good for web pages
+elm is easier to learn than most functional shizzle
+
+doesn't have as many libraries, so need to bring in some javascript libraries, so need to use ports / web components
+some web apis are missing (don't know what this means)
+elm-lang issue 19 is a problem (no isready type function)
+
+no language as good for the back end yet.
+

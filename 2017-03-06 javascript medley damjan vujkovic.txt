@@ -9,7 +9,7 @@ Array.from("56") returns ["5", "6"]
 
 Array.from({length: 2}, (n, i) => i) return [0, 1], useful way of creating arrays with calculated contents
 
-Adolphe quetelet created body mass index bmi to show which people were malnourished. He showed that bmi and similar things are normally distributed.
+Adolphe Quetelet created body mass index bmi to show which people were malnourished. He showed that bmi and similar things are normally distributed.
 
 Math.log10(100) is 2
 

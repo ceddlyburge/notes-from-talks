@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Using createClass with jsx</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+<!--need to use babel to work with jsx-->
+<script type="text/babel">
+    let HelloReact = React.createClass({
+        propTypes : { 
+            cedd: React.PropTypes.string, 
+            message: React.PropTypes.number
+        }
+        ,getDefaultProps : function () { return {'cedd': 'burge'}; }
+        , render: function () {
+            return (<div>
+                        <h1>Hello React</h1>
+                        <p>{this.props.cedd}</p>
+                    </div>);
+       }
+    }); 
+
+    // place react component o the page
+    ReactDOM.render(<HelloReact message={5}/>, document.getElementById('view'));
+</script>
+</html>

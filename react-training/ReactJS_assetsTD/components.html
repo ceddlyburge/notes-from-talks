@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+<script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+    <script type="text/babel">
+        // create classes
+        let HelloMessage = React.createClass({
+            render : function(){
+                return (<div>{this.props.message}</div>)
+            }
+        })
+
+        let HelloReact = React.createClass({
+            getInitialState : function(){
+                return { message : 'initial message state' }
+            },
+            // update method
+            updateMessage : function(){
+                this.setState({
+                    message : this.refs.messageTextBox.value 
+                })
+            },
+        // render
+            render : function(){
+                    return(
+                        <div>
+                            <HelloMessage message="initial prop"></HelloMessage>
+                            <input type="text" ref="messageTextBox"/>
+                            <button onClick={this.updateMessage}>Update</button>
+                            <div>{this.state.message}</div>
+                        </div>
+                    )
+                }
+        })
+        // render to the screen
+        ReactDOM.render(<HelloReact />, document.getElementById('view'))
+        
+
+
+
+    </script>
+</html>

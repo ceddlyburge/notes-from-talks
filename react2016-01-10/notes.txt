@@ -1,0 +1,103 @@
+# intro
+
+can use react on server and send out html (called isomorphic I think) or do it on the client.
+
+# best practices
+
+## application structure
+
+src
+ components
+  keep as flat as possible
+  indicates that they don't depend on each other
+  should be cohabiting and self sufficient
+  header
+   css
+   js
+   test.js
+  ...
+ pages
+  ...
+ services
+  api?
+  
+there are class components (with state) or functional (better)
+
+## styles
+
+BEM - block element order, this looks a bit daft
+
+CSS Modules are better
+
+import styles from './table.css'
+
+<div className={styles.table} />
+
+css file has 
+.table { display:none }
+
+looks like BEM when rendered
+
+css in js also a new thing, 
+
+## Testing
+
+use jest and enzyme. jest got good in the last year
+
+enzyme renders the dom, and can shallow render (eg just the component and not a valid dom I imagine)
+
+npm test
+
+## Tools
+
+ESLint with Airbnb rules
+
+React developer tools - this is the chrome plugin that i already have i think
+
+wallaby can integrate jest with an ide
+
+how to get css to be consistent across componenets if they are independent?
+
+# Redux
+
+use when one component needs the same state as another one ad when they aren't related in the component hierarchy
+
+## State
+in redux the entire state is a single javascript object
+
+## Store
+keeps you from doing stuff that you shouldn'table
+
+## Container - mapStateToProps is the name of function by default
+a function to get the bit of state that you need for a component.
+
+## Action Creators
+create actions which describe the desired mutation
+
+## Reducer
+updates the state based on the action received
+
+redux is immutable, so reducer code can look a bit weird
+
+## Container - mapDispatchToProps is the name of function by default
+a function to execute a reducer from a component.
+
+## using
+
+const store = createStore()
+
+always test the reducers
+deepFreeze is a library that freezes objects recursively
+can use in the test to make sure that reducer tests fail if you naghtly try to mutate state in the reducer. If you don't use this then you can mutate the state in the reducer, the test will pass but then the app will fail.
+
+import bindActionCreators from 'redux'
+to reduce some boilerplate
+use in mapDispatchToProps
+
+there are redux developer tools 
+
+you can time travel in redux apps, as the state is a single object and I guess it must be versioned by redux. can be handy when debugging problems as can go back in time to the problem.
+
+getting strated with redux egghead videos by dan abramov
+
+app only has one reducer by default, so the enum statement could get very big. There is a 'combine reducers' type thing which allows you to write multiple reducers.

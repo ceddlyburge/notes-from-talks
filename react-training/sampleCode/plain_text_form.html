@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This form sends the results asplain text by email</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<form method="post" action="mailto:yourname@yourbusiness.co.uk?subject=Here are the form results" enctype="text/plain">
+  <table>
+    <tr valign="top"> 
+      <td width="12%">Name</td>
+      <td width="88%"> 
+        <input type="text" name="Name">
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td width="12%">Address</td>
+      <td width="88%"> 
+        <textarea name="Address" rows="4"></textarea>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td width="12%">Choose</td>
+      <td width="88%"> 
+        <select name="Choice">
+          <option>Apples</option>
+          <option>Pears</option>
+          <option>Oranges</option>
+          <option>Kiwi</option>
+        </select>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2"> 
+        <input type="submit" name="Submit" value="Send">
+        <input type="reset" name="Submit2" value="Clear">
+        <input type="hidden" name="hiddenField" value="This form was sent as plain text">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

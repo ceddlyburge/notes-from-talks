@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Javascript Objects</title>
+        <link />
+        <script>
+        // create global objects
+        var p = Object.create(null);
+            p.x = 3.0;
+            
+        var q = Object.create(p);
+        // define properties in q
+        Object.defineProperties(p, { y : {value:4.0,
+                                          writable:true,
+                                          enumerable:false,
+                                          configurable:true},
+                                     r : { get : function(){
+    return Math.sqrt(this.x*this.x + this.y*this.y);                                                                              },
+                                          enumerable:true,
+                                          configurable:true
+                                         }
+                                   } );
+        q.y = 50; 
+        console.log(q.x, q.y, q.r);
+        for(prop in p){
+            console.log(prop, p[prop]);
+        }
+            
+// preventExtensions, seal and freeze
+Object.preventExtensions(q);
+    p.theta = true;
+ Object.seal(q); // no longer configurable
+  //  Object.defineProperty(q, { y : {writable:true}});
+  q.theta = false; // not set - because we prevented extenstions to q
+  console.log('theta is: ' , q.theta);
+ 
+  Object.freeze(q); // immutable
+  q.y = Number.MIN_VALUE;
+  console.log('Y: ', q.y, 'Theta in q :', q.theta);
+            
+            
+            
+            
+        var o3 = {
+            x : 3.0, 
+            y : 4.0,
+            get r() { return Math.sqrt(this.x*this.x + this.y*this.y)},
+            set r(newValue) {
+                var oldValue = this.r;
+                var ratio    = newValue/oldValue;
+                this.x *= ratio;
+                this.y *= ratio;
+            },
+            // theta will be read-only
+            get theta(){ return Math.atan2(this.x, this.y) } // in radians
+        }
+        
+        // testing
+        //o3.x = 30;
+        //o3.y = 40;
+        o3.r = 50;
+        // can access using square-brackets
+        console.log(o3.x, o3['y'], o3.r);
+        
+        
+        // stringify
+        var tempString = JSON.stringify(o3);
+        console.log(tempString);
+        // now convert back to an object
+        var o9 = JSON.parse(tempString);
+      //  localStorage['o3'] = tempString;
+        
+        
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body></body>
+</html>
+
+
+

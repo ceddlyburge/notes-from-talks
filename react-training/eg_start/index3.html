@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create classes using React.createClass()  (view the React DOM in React tools panel)</title>
+</head>
+
+<body>
+    <!-- Target Container -->
+    <div id="react-container"></div>
+    <!-- React Library & React DOM (available up to ~15.1.0) -->
+    <script src="https://fb.me/react-15.1.0.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.js"></script>
+    <script>
+        // first example, just create it
+        //const IngredientsList = React.createClass({
+        //    displayName: "IngredientsList",
+        //    render() {
+        //        return React.createElement("ul", {
+        //                "className": "ingredients"
+        //            },
+        //            React.createElement("li", null, "1 lb Salmon"),
+        //            React.createElement("li", null, "1 cup Pine Nuts"),
+        //            React.createElement("li", null, "2 cups Butter Lettuce"),
+        //            React.createElement("li", null, "1 Yellow Squash"),
+        //            React.createElement("li", null, "1/2 cup Olive Oil"),
+        //            React.createElement("li", null, "3 cloves of Garlic")
+        //        )
+        //    }
+        //})
+        //const list = React.createElement(IngredientsList, null, null)
+        //ReactDOM.render(
+        //    list,
+        //    document.getElementById('react-container')
+        //)
+
+        // second example, pass data to React components as properties
+        //const IngredientsList = React.createClass({
+        //    displayName: "IngredientsList",
+        //    render() {
+        //        return React.createElement("ul", {
+        //                className: "ingredients"
+        //            },
+        //            this.props.items.map((ingredient, i) =>
+        //                React.createElement("li", {
+        //                    key: i
+        //                }, ingredient)
+        //            )
+        //        )
+        //    }
+        //})
+        //const items = [
+        //    "1 lb Salmon",
+        //    "1 cup Pine Nuts",
+        //    "2 cups Butter Lettuce",
+        //    "1 Yellow Squash",
+        //    "1/2 cup Olive Oil",
+        //    "3 cloves of Garlic"
+        //]
+        //// now when you look at the React DOM, items are indexed
+        //ReactDOM.render(
+        //    React.createElement(IngredientsList, {
+        //        items
+        //    }, null),
+        //    document.getElementById('react-container')
+        //)
+        // third example, using a custom method
+        const IngredientsList = React.createClass({
+            displayName: "IngredientsList",
+            renderListItem(ingredient, i) {
+                return React.createElement("li", {
+                    key: i
+                }, ingredient)
+            },
+            render() {
+                return React.createElement("ul", {
+                        className: "ingredients"
+                    },
+                    this.props.items.map(this.renderListItem)
+                )
+            }
+        })
+        // from here on is same as eg 2
+        /*const items = [
+            "1 lb Salmon",
+            "1 cup Pine Nuts",
+            "2 cups Butter Lettuce",
+            "1 Yellow Squash",
+            "1/2 cup Olive Oil",
+            "3 cloves of Garlic"
+        ]*/
+        // render
+        ReactDOM.render(
+            React.createElement(IngredientsList, {
+                items
+            }, null),
+            document.getElementById('react-container')
+        )
+    </script>
+</body>
+
+</html>

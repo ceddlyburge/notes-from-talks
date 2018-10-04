@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>p166 Observables - using RxJS (see console)</title>
+</head>
+
+<body>
+
+</body>
+<script src="libs/rxall.min.js"></script>
+<script>
+    var observable = Rx.Observable.create(observer => {
+        setInterval(() => {
+            observer.onNext('My async operation');
+        }, 2000);
+    });
+    observable.subscribe(response => console.log(response));
+</script>
+
+</html>

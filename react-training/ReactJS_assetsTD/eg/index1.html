@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pure React Samples</title>
+</head>
+
+<body>
+    <!-- Target Container -->
+    <div id="react-container"></div>
+    <!-- React Library & React DOM (available up to ~15.1.0) -->
+    <script src="https://fb.me/react-15.1.0.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.js"></script>
+    <script>
+        // Pure React and JavaScript Code
+        let el0 = React.createElement("h1", null, "Baked Salmon")
+        let el1 = React.createElement("h1", {
+                    id: "recipe-0",
+                    'data-type': "title"
+                },
+                "Baked Salmon"
+            )
+        console.log(el1); // take a look at the React class
+        //              el0, el1 
+        ReactDOM.render(el0, document.getElementById('react-container'));
+    </script>
+</body>
+
+</html>

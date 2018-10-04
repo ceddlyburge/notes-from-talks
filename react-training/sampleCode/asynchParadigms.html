@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>p164 - See Console</title>
+  </head>
+
+  <body>
+   
+  </body>
+<script>
+    // call-backs
+    function notifyCompletion() {
+        console.log('Our asynchronous operation has been completed');
+    }
+    function asynchronousCallbackOperation(callback) {
+        setTimeout(callback, 5000);
+    }
+    asynchronousCallbackOperation(notifyCompletion);
+
+    // promises
+    function asynchronousPromiseOperation() {
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(resolve, 5000);
+        });
+        return promise;
+    }
+    asynchronousPromiseOperation().then(notifyCompletion);
+
+</script>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Object Oriented Programming</title>
+        <link />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+        // a function object    
+        function hoisting(){
+            var local;
+            console.log(local);
+            local= "local scope";
+        }    
+        //call it
+        hoisting();
+            
+        // closure    
+        var global = "global scope";
+        function outer(){
+            var middle="middle scope";
+            var inner = function (){
+                var inv="inner scope"; 
+                console.log(inv,middle,global);
+            }
+            return inner;
+        }
+            
+       console.log( outer()() );  
+            
+        // global-scoped variables
+        var s = 1; // scalar variable
+            s = true;
+            s = 'fred';
+            s = new Date();
+        
+        var a = new Array();
+            a[0] = true;
+            a[1] = Number.POSITIVE_INFINITY;
+            
+            b = []; // same as = new Array();
+            
+        var o3 = {}; // same as = new Object(); (ECMAScript 3)
+            o3.someProp = 'Coffee';
+            
+            
+        var o5 = Object.create(null); // ECMAScript 5 object
+            o5.otherProp = "Tea";
+            
+        console.log(o3, o5);   
+            
+
+        // wait for the page to load
+        window.onload = function(){
+            // assign an event listener to the button
+            btnGo.addEventListener('click', handleClick); // or document.getelementById('btnGo')
+
+            // call-back function
+            function handleClick(e){
+                console.log('button was clicked', e.target.id);
+            }
+        } // end of window.onload event
+        </script>
+    </head>
+    <body>
+        <article id="main">
+        
+        <input type="button" id="btnGo" value="Agree" />
+                
+        </article>
+    </body>
+</html>
+
+
+

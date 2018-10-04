@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exploring ES6</title>
+</head>
+<style>
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: darkorange;
+            border: 6px solid crimson;
+        }
+    </style>
+<body>
+    <div id="view"></div>
+</body>
+<script>
+    // closures    
+    function outer(){
+        let o = 'outer'
+        function inner(){
+            let i = 'inner'
+            console.log(o,i)
+        }
+        return inner;
+    }
+    
+    outer()() // closure
+    
+    // configurable and writable
+    const configObj = Object.create(null)
+          configObj.x = true
+    console.log(configObj.x)
+    Object.defineProperty(configObj, 'x', {writable:false})
+    Object.defineProperty(configObj, 'x', {enumerable:false})
+    Object.defineProperty(configObj, 'x', {configurable:false})
+    Object.defineProperty(configObj, 'x', {writable:true})
+    configObj.x = false
+    console.log(configObj.x)
+
+</script>
+    
+    
+    
+    
+    
+
+</html>

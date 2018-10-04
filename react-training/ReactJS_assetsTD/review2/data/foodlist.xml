@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<food id='1' 
+		category='Main' 
+		dish='Roast' 
+		price='22.99' 
+		quantity='0'/>
+	<food id='2'
+		category='Main'
+		dish='Vegetarian'
+		price='14.99'
+		quantity='0'
+	/>
+	<food id='3'
+		category='Starter'
+		dish='Soup'
+		price='8.99'
+		quantity='0'
+	/>
+	<food id='4'
+		category='Starter'
+		dish='Bread'
+		price='6.99'
+		quantity='0'
+	/>
+	<food id='5'
+		category='Dessert'
+		dish='Pie'
+		price='11.99'
+		quantity='0'
+	/>
+	<food id='6'
+		category='Main'
+		dish='Stew'
+		price='17.99'
+		quantity='0'
+	/>
+	 <food id='7'
+		category='Dessert'
+		dish='Cheese'
+		price='15.99'
+		quantity='0'
+	/>
+</list>

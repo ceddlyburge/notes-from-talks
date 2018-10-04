@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>p170 Observable filtered stream of keystrokes (see console)</title>
+</head>
+
+<body>
+<h3>Touch the page, then use cursor keys and watch the console</h3>
+</body>
+<script src="libs/rxall.min.js"></script>
+<script>
+    var keyboardStream = Rx.Observable
+        .fromEvent(document, 'keyup')
+        .map(x => x.which);
+
+    var cursorMovesStream = keyboardStream.filter(x => {
+            return x > 36 && x < 41;
+        })
+        .map(x => {
+            var direction;
+            switch (x) {
+            case 37:
+                direction = 'left';
+                break;
+            case 38:
+                direction = 'up';
+                break;
+            case 39:
+                direction = 'right';
+                break;
+            default:
+                direction = 'down';
+            }
+            return direction;
+        });
+    
+    cursorMovesStream.subscribe(e => console.log(e));
+</script>
+
+</html>

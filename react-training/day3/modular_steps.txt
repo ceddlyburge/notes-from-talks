@@ -1,0 +1,14 @@
+For the modular 'recipe' example:
+=================================
+
+Open the folder in a command prompt and load the following:
+npm install webpack
+npm install babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
+npm install react react-dom
+npm install json-loader style-loader css-loader
+npm install autoprefixer-loader
+
+Finally, at the command prompt, invoke webpack (which uses webpack.config.js)
+webpack
+
+Look in the ‘dist’ folder and open 'index.html' in a browser

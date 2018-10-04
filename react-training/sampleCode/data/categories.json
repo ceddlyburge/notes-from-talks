@@ -1,0 +1,28 @@
+[{
+        "id": 0,
+        "category": "abstract"
+    },
+    {
+        "id": 1,
+        "category": "animals"
+    },
+    {
+        "id": 2,
+        "category": "city"
+    },
+    {
+        "id": 3,
+        "category": "flowers"
+    },
+    {
+        "id": 4,
+        "category": "miscellaneous"
+    },
+    {
+        "id": 5,
+        "category": "nature"
+    },
+    {
+        "id": 6,
+        "category": "people"
+}]

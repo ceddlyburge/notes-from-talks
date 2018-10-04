@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+<script>
+    // here is raw react code
+    let HelloReact = React.createClass({
+        render: function () {
+            return React.DOM.h1(null, 'Hello React');
+        }
+    });
+
+    // place react component o the page
+    ReactDOM.render(React.createElement(HelloReact), document.getElementById('view'));
+</script>
+</html>

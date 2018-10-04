@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photos>
+	<image filename="nature18" photographer="Vera Drake" category="nature">
+		<desc>Crab apple trees in bloom.</desc> 
+	</image>
+	<image filename="animals03" photographer="Emily Kim" category="animals">
+		<desc>Chubby donkey looking for a friend.</desc> 
+	</image>
+	<image filename="people08" photographer="Lisa Traylor" category="people">
+		<desc>Tulle veil with pearl accents.</desc> 
+	</image>
+	<image filename="nature10" photographer="Sukiya Wang" category="nature">
+		<desc>Green blades of grass.</desc> 
+	</image>
+	<image filename="misc04" photographer="David Hassoun" category="miscellaneous">
+		<desc>Thomas Edison's workshop.</desc> 
+	</image>
+	<image filename="abstract02" photographer="David Hassoun" category="abstract">
+		<desc>Firedancer at midnight in downtown Denver.</desc> 
+	</image>
+	<image filename="city04" photographer="Emily Kim" category="city">
+		<desc>Rooftops in Paris France.</desc> 
+	</image>
+	<image filename="nature16" photographer="Trevor Hayes" category="nature">
+		<desc>Overgrown garden.</desc> 
+	</image>
+	<image filename="nature07" photographer="Yolanda Adams" category="nature">
+		<desc>Sun through trees.</desc> 
+	</image>
+	<image filename="nature08" photographer="Luca Buitoni" category="nature">
+		<desc>Trunk Bay. St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="nature09" photographer="Sukiya Wang" category="nature">
+		<desc>North.</desc> 
+	</image>
+	<image filename="abstract03" photographer="David Hassoun" category="abstract">
+		<desc>Performer performing with two flames at once. Camera set at a slow shutter speed.</desc> 
+	</image>
+	<image filename="people06" photographer="Tamara Quinn" category="people">
+		<desc>Shriner mini-cars.  Music and Blossom Festival Canon City.</desc> 
+	</image>
+	<image filename="abstract05" photographer="Carrie Shizlier" category="abstract">
+		<desc>Street performer during Carnivale. Piazza San Marco Venice.</desc> 
+	</image>
+	<image filename="abstract06" photographer="Alida Simms" category="abstract">
+		<desc>Chinese New Year celebration. Chinatown San Francisco.</desc> 
+	</image>
+	<image filename="abstract07" photographer="Austin Ryan" category="abstract">
+		<desc>The unrelenting sun. Death Valley California.</desc> 
+	</image>
+	<image filename="abstract08" photographer="David Hassoun" category="abstract">
+		<desc>Flight pattern of a firework. Camera set at slow shutter speed.</desc> 
+	</image>
+	<image filename="abstract09" photographer="David Hassoun" category="abstract">
+		<desc>Group of joggers seen through thermo goggles.</desc> 
+	</image>
+	<image filename="abstract10" photographer="Cole Bateman" category="abstract">
+		<desc>Energy surge from gases orbiting Venus.</desc> 
+	</image>
+	<image filename="abstract11" photographer="Jason Eberheart" category="abstract">
+		<desc>Close up of cigarette being discarded from moving vehicle.</desc> 
+	</image>
+	<image filename="animals01" photographer="Aziz Housaad" category="animals">
+		<desc> Photo of a doe and deer outside of Cheyenne Wyoming.</desc>
+	</image>
+	<image filename="animals02" photographer="Diane Rowlings" category="animals">
+		<desc>Close up of a doe outside of Cheyenne Wyoming.</desc> 
+	</image>
+	<image filename="animals04" photographer="Emily Kim" category="animals">
+		<desc>Elsie having corn on the cobb.</desc> 
+	</image>
+	<image filename="animals05" photographer="Emily Kim" category="animals">
+		<desc>Elsie driving to work in the morning.</desc> 
+	</image>
+	<image filename="animals06" photographer="Emily Kim" category="animals">
+		<desc>Elsie helping out with the campfire.</desc> 
+	</image>
+	<image filename="animals07" photographer="Austin Ryan" category="animals">
+		<desc>Mountain goat near the top of Pikes Peak.</desc> 
+	</image>
+	<image filename="animals08" photographer="James Tiner" category="animals">
+		<desc>The purebreads and a donkey at T Cross Ranch Colorado.</desc> 
+	</image>
+	<image filename="animals09" photographer="Carrie Shisler" category="animals">
+		<desc>Baby racoon discovered after California wildfires.</desc> 
+	</image>
+	<image filename="animals10" photographer="Cole Bateman" category="animals">
+		<desc>Monkey and her baby.  Monkey Island Vietnam.</desc> 
+	</image>
+	<image filename="animals11" photographer="Jason Eberheart" category="animals">
+		<desc>Iguana relaxing poolside in Westin St. John USVI.</desc> 
+	</image>
+	<image filename="abstract04" photographer="David Hassoun" category="abstract">
+		<desc>Superheated gases demonstration. Senior project MIT.</desc> 
+	</image>
+	<image filename="animals12" photographer="Jason Eberheart" category="animals">
+		<desc>Shy gray parrot that blushes around crowds.</desc> 
+	</image>
+	<image filename="city01" photographer="Thandie Newton" category="city">
+		<desc>Twilight. Manhattan.</desc> 
+	</image>
+	<image filename="city02" photographer="Terrel Cambry" category="city">
+		<desc>Evening rush hour. New York City New York.</desc> 
+	</image>
+	<image filename="city03" photographer="Emily Kim" category="city">
+		<desc>Traveling Art Exhibit. The Met New York City.</desc> 
+	</image>
+	<image filename="flowers01" photographer="Nancy Weiss" category="flowers">
+		<desc>Pink Vermillion.</desc> 
+	</image>
+	<image filename="flowers02" photographer="Cate Reiter" category="flowers">
+		<desc>Signs of Fall Martha's Vineyard.</desc> 
+	</image>
+	<image filename="flowers03" photographer="Patrick Miller" category="flowers">
+		<desc>Sub-alpine meadow blooms.</desc> 
+	</image>
+	<image filename="flowers04" photographer="Aidan Wilson" category="flowers">
+		<desc>Cactus flower. Scottsdale Arizona</desc> 
+	</image>
+	<image filename="flowers05" photographer="Emily Kim" category="flowers">
+		<desc>Indian paintbrush.</desc> 
+	</image>
+	<image filename="flowers06" photographer="Sierra Newton" category="flowers">
+		<desc>Pink umbrella daisies.</desc> 
+	</image>
+	<image filename="flowers07" photographer="Alexa Dansworth" category="flowers">
+		<desc>White tea flowers.</desc> 
+	</image>
+	<image filename="flowers08" photographer="Adam Martin" category="flowers">
+		<desc>Native alpine flower Switzerland.</desc> 
+	</image>
+	<image filename="flowers09" photographer="Emily Rossum" category="flowers">
+		<desc>Cherry blossoms in bloom. Steamboat Springs Colorado</desc> 
+	</image>
+	<image filename="flowers10" photographer="Paul Bowman" category="flowers">
+		<desc>Close-up of flower pistils and stamen.</desc> 
+	</image>
+	<image filename="flowers11" photographer="Karl Bomblies" category="flowers">
+		<desc>The Pride of Holland.</desc> 
+	</image>
+	<image filename="misc01" photographer="Paul Trani" category="miscellaneous">
+		<desc>19th century sugar mill.  St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="misc02" photographer="Paul Trani" category="miscellaneous">
+		<desc>Abandoned colonial home.  St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="misc03" photographer="Paul Trani" category="miscellaneous">
+		<desc>Sunset Caneel Bay. St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="misc05" photographer="William Ziomek" category="miscellaneous">
+		<desc>Roof damage after Tornado. Kansas.</desc> 
+	</image>
+	<image filename="misc06" photographer="Meg Linzey" category="miscellaneous">
+		<desc>Storm cellar where Kansas resident took shelter from F5 tornado.</desc> 
+	</image>
+	<image filename="misc07" photographer="Nicholas Page" category="miscellaneous">
+		<desc>Abandoned snack stand. Nassau Bahamas.</desc> 
+	</image>
+	<image filename="misc08" photographer="Chris Stinnett" category="miscellaneous">
+		<desc>Bear cave.  Moab Utah.</desc> 
+	</image>
+	<image filename="misc09" photographer="David Hassoun" category="miscellaneous">
+		<desc>Native American home.  Mesa Verde Colorado</desc> 
+	</image>
+	<image filename="misc10" photographer="Sue Barber" category="miscellaneous">
+		<desc>Rusted mining headlamp.  Idaho Springs Colorado</desc> 
+	</image>
+	<image filename="misc11" photographer="Gerard Annuit" category="miscellaneous">
+		<desc>Roan shipwreck.  St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="nature01" photographer="Penny Martin" category="nature">
+		<desc>Adolescent butterfly in the summer. taken atop Mount Evans in Colorado.</desc> 
+	</image>
+	<image filename="nature02" photographer="Collette Annuit" category="nature">
+		<desc>The road to forever.  New Orleans LA.</desc> 
+	</image>
+	<image filename="nature03" photographer="Taylor Mandbridge" category="nature">
+		<desc>Glorious sunset.  Tanzania Africa.</desc> 
+	</image>
+	<image filename="nature04" photographer="Joel Exeter" category="nature">
+		<desc>Fish Creek.  Wyoming.</desc> 
+	</image>
+	<image filename="nature05" photographer="Howard Aplin" category="nature">
+		<desc>Aspen majesty.</desc> 
+	</image>
+	<image filename="nature06" photographer="Omar Mustaan" category="nature">
+		<desc>Triumph of the survivor.</desc> 
+	</image>
+	<image filename="nature11" photographer="Joel Exeter" category="nature">
+		<desc>Fish Creek. Wyoming.</desc> 
+	</image>
+	<image filename="nature12" photographer="Thomas Morris" category="nature">
+		<desc>Winter's end.</desc> 
+	</image>
+	<image filename="nature13" photographer="Lori Gaines" category="nature">
+		<desc>Apache Teepee.</desc> 
+	</image>
+	<image filename="nature14" photographer="Brooke Preston" category="nature">
+		<desc>Japanese fishing boats.  Okinawa Japan.</desc> 
+	</image>
+	<image filename="nature15" photographer="Brooke Preston" category="nature">
+		<desc>Xiao hill. Okinawa Japan</desc> 
+	</image>
+	<image filename="nature17" photographer="Evita Rhone" category="nature">
+		<desc>Jost Van Dyke. St. John U.S.V.I.</desc> 
+	</image>
+	<image filename="nature20" photographer="Zaire Freemont" category="nature">
+		<desc>Approaching Storm.  Black and White film.</desc> 
+	</image>
+	<image filename="people01" photographer="Lisa Traylor" category="people">
+		<desc>French bridal veil.</desc> 
+	</image>
+	<image filename="people02" photographer="Evander Sloan" category="people">
+		<desc>Cambodian orphans.</desc> 
+	</image>
+	<image filename="people04" photographer="Ron Trani" category="people">
+		<desc>Army helicopter pilot.</desc> 
+	</image>
+	<image filename="people05" photographer="Paul Trani" category="people">
+		<desc>Preparation for Moroccan meal.</desc> 
+	</image>
+	<image filename="nature19" photographer="Charles Stapleton" category="nature">
+		<desc>Cascade Falls.  Telluride Colorado.</desc> 
+	</image>
+	<image filename="abstract01" photographer="David Hassoun" category="abstract">
+		<desc> Photo of a performer dancing with fire. Camera set at a slow shutter speed.</desc>
+	</image>
+	<image filename="people09" photographer="Clay Portman" category="people">
+		<desc>Buddha statue shop. Chengdu China.</desc> 
+	</image>
+	<image filename="people10" photographer="Emily Kim" category="people">
+		<desc>Flower carrier in Vietnam.</desc> 
+	</image>
+	<image filename="people11" photographer="Lisa Traylor" category="people">
+		<desc>Motorcycle bride.</desc> 
+	</image>
+	<image filename="people12" photographer="Paul Trani" category="people">
+		<desc>Cannonball.</desc> 
+	</image>
+	<image filename="people13" photographer="Lisa Traylor" category="people">
+		<desc>Three piece tulle veil.</desc> 
+	</image>
+	<image filename="people14" photographer="Lisa Traylor" category="people">
+		<desc>Woman waiting for her suitor.</desc> 
+	</image>
+	<image filename="people07" photographer="Tamara Quinn" category="people">
+		<desc>Canon City Queen. Music and Blossom Festival Canon City.</desc> 
+	</image>
+	<image filename="people03" photographer="Lt. Michael Morenz" category="people">
+		<desc>Army drill exercise.</desc> 
+	</image>
+	<image filename="people15" photographer="Randall Peyton" category="people">
+		<desc>Parade crowd.</desc> 
+	</image>
+</photos>

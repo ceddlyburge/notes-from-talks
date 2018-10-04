@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Using createClass with jsx</title>
+<script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+<script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+    <!-- note text/babel since we are going to write jsx -->
+    <script type="text/babel">
+        let localVar = 'local';
+        let HelloReact = React.createClass({ // createClass must have a render method
+            propTypes       : {
+                message : React.PropTypes.string,
+                qty     : React.PropTypes.number,
+            },
+            getDefaultProps : function(){
+                return {
+                    qty     : 3,
+                    message : 'default message'
+                }
+            },
+            render : function(){return (<div>
+                                <h1>Hello React</h1>
+                                <p>mesage is: {this.props.message} {localVar} {this.props.qty}</p>
+                                </div>)}
+        })
+        ReactDOM.render(<HelloReact qty={5} />, document.getElementById('view'))
+    </script>
+</html>
+
+
+
+

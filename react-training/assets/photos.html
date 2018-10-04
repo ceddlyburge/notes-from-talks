@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+<!--need to use babel to work with jsx-->
+<script type="text/babel">
+    
+    /*doesn't work
+        class Photo extends React.Component ({
+        render: function () {
+            return (
+                <div>
+                    <p>{this.props.filename}</p>
+                    <p>{this.props.desc}</p>
+                    <p>{this.props.photographer}</p>
+                </div>
+            )
+        }
+    })
+    */
+    let Photo = React.createClass({
+        render: function () {
+            return (
+                <div>
+                    <p>{this.props.photographer}</p>
+                    <p>{this.props.desc}</p>
+                    <img src={`../sampleCode/data/gallery/${this.props.filename}.jpg`} />
+                </div>
+                )
+        }
+    })
+    
+    let Photos = React.createClass({
+        getInitialState : function () {
+            return {'photos': []}
+        },
+        loadCommentsFromServer: function() {
+            $.ajax({
+                url: '../sampleCode/data/photos.json',
+                dataType: 'json',
+                cache: false,
+                success: function(data) {
+                    this.setState({photos: data})
+                }.bind(this),
+                error: function(xhr, status, err) {
+                    console.error(this.props.url, status, err.toString())
+                }.bind(this)
+            });
+        },
+        componentDidMount: function() {
+            this.loadCommentsFromServer();
+            //setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+        },
+        render: function () {
+            let self = this 
+            return (
+                <div>
+                    {
+                        this.state.photos.map(function (photo) {
+                            if (photo.category === self.props.category) {
+                                return (
+                                    <Photo key={photo.filename} filename={photo.filename} desc={photo.desc} photographer={photo.photographer} />
+                                )
+                            }
+                        })
+                    }
+                </div>
+             )
+        }
+    })
+
+    let PhotoCategories = React.createClass({
+        getInitialState : function () {
+            return {'categories': []}
+            },
+        loadCommentsFromServer: function() {
+            $.ajax({
+            url: '../sampleCode/data/categories.json',
+            dataType: 'json',
+            cache: false,
+            success: function(data) {
+            this.setState({categories: data})
+            }.bind(this),
+            error: function(xhr, status, err) {
+            console.error(this.props.url, status, err.toString())
+            }.bind(this)
+            });
+            },
+        componentDidMount: function() {
+            this.loadCommentsFromServer();
+            //setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+        },
+        handleChange(e)
+        {
+            this.props.onCategoryChange(e.target.value)
+        },
+        render: function () {
+            return (
+            <select onChange={this.handleChange}>
+                {
+                this.state.categories.map(function (category) {
+                return (
+                <option>{category.category}</option>
+                )
+                })
+                }
+            </select>
+            )
+        }
+    })
+
+    let PhotoList = React.createClass({
+        getInitialState : function () {
+            return {category: "abstract"}
+        },
+        handleChange: function(category) {
+            console.log('hello')
+            this.setState({category: category})
+        },
+        render: function () {
+        let self = this
+        return (
+        <div>
+            <PhotoCategories onCategoryChange={self.handleChange} />
+            <Photos category={self.state.category} />
+        </div>
+        )
+        }
+    })
+
+    ReactDOM.render(<PhotoList />, document.getElementById('view'))
+
+</script>
+</html>

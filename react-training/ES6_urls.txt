@@ -1,0 +1,21 @@
+ECMAScript 6 (ES6)
+==================
+Traceur REPL - convert ES6 to ES5
+https://google.github.io/traceur-compiler/demo/repl.html#
+
+BabelJS - a JavaScript 'compiler'
+https://babeljs.io/
+
+ES6 new features
+http://es6-features.org/#IteratorForOfOperator
+
+ES6 support matrix
+https://kangax.github.io/compat-table/es6/
+
+Testing
+=======
+All about Jasmine
+https://jasmine.github.io/2.0/introduction.html
+
+All about Protractor
+https://angular.github.io/protractor/#/

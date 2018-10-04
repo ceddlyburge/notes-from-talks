@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exploring Javascript functions</title>
+        <link />
+        <script>
+'use strict';            
+
+// a function with very particualr argument requirements
+function check(){
+ // make sure the arguments are as expected   
+    // a number
+    if( typeof( arguments[0] ) !='number' ){
+        validationErrorArray.push('no number');
+    }
+    // a date
+    if( typeof(arguments[1] ) !='date' ){
+        validationErrorArray.push('no date');
+    }
+    // a string between 8-12 chars
+    if( typeof(arguments[2] ) !='string' && arguments[2].length<8 ){
+        validationErrorArray.push('string too short');
+    }    
+}
+            
+            
+            
+function overload() {
+  //  arguments.push('no'); // nope - arguments is not an array
+    arguments[99] = 'hmmmm';
+    console.log(arguments);
+    switch(true) { // or switch (expression)
+        case arguments.length == 0:
+            break;
+        case arguments.length == 1:
+            console.log('Hello ' + arguments[0]);
+            break;
+        case arguments.length == 2:
+            console.log(arguments[0] + arguments[1]);
+            break;
+        case arguments.length == 3:
+            for(var prop in arguments){
+                console.log(prop, arguments[prop])  ;
+    }
+            break;
+        default:
+            break;
+    }
+}
+ 
+overload();
+overload('Fred');
+overload(3, 4);
+overload(true, false, NaN);
+        
+        
+        
+        
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body></body>
+</html>
+
+
+

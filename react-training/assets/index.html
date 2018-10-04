@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simple architecture</title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+<!--need to use babel to work with jsx-->
+<script type="text/babel">
+    // pure react and javascript
+    let el = React.createElement('h1', {id:'recipe', 'data-type':'title'}, 'Coffee')
+    console.log(el)
+    ReactDOM.render(el, document.getElementById('view'))
+</script>
+</html>

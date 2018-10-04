@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exploring ES6</title>
+</head>
+<style>
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: darkorange;
+            border: 6px solid crimson;
+        }
+    </style>
+<body>
+    <div id="view"></div>
+</body>
+<script>
+
+    // scalars
+    x = 9
+
+    function c() {
+        console.log(arguments)
+        let b = 3 // ES6/7+
+        console.log(a, b)
+    }
+    var a = 2 // ES3/5 - var gets hoisted to top of current scope
+    const d = 'THIS_IS_CONSTANT'
+        // objects
+    const obj = {
+        someProp: 'b'
+    }; // es3 object
+    obj.someProp = 'a';
+    c(x, 'green', true, obj.toString())
+
+    const otherObj = Object.create(null) // es5 object
+    otherObj.myProp = 7;
+    console.log(obj, otherObj); // otherObj is more light-weight
+
+    // lambda functions
+    const sqr = (x) => x * x // maintains scope as in iife
+
+    // rest and spread
+    const r = function(a,b,c,d=3, ...rest){
+        for (let item of rest){
+            console.log(item)
+        }
+        console.log(d)
+    }
+    r('hello', 'bye', true, 6, 7,8,9,0);
+    
+    
+    console.log(sqr(3));
+
+    
+    
+    // default, rest and spread
+    let hills = ['tall', 'med', 'small']
+    let rev   = hills.reverse();
+    
+    console.log(rev);
+
+    // iterators 'for ... of'     
+
+
+    // classes
+    class Greeter {
+      constructor(message) {
+        this.message = message; 
+      }
+      greet () {
+          // string builder (tick-mark)
+            alert(`Hello  ${this.message.toUpperCase()}`);    
+        }
+    }
+    const greeter = new Greeter('world');
+   // greeter.greet(); 
+
+    // destructuring
+    const sandwiches = {
+        bread : 'white',
+        meat  : 'tuna',
+        cheese: 'cheddar',
+        toppings: ['lettuce', 'tomato', 'spread']
+    }
+    let {bread, cheese} = sandwiches;
+    
+    // see what we have
+    console.log(bread, cheese)
+    
+    let [pud1, ,pud3] = ['apple', 'cake', 'other']
+    console.log(pud1, pud3);
+    
+</script>
+    
+    
+    
+    
+    
+
+</html>

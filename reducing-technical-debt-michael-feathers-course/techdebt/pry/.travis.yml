@@ -1,0 +1,33 @@
+rvm:
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0
+  - 2.1
+  - 2.2
+  - 2.3.1
+  - 2.4.1
+  - ruby-head
+  - rbx-2
+  - jruby
+  - jruby-head
+
+script:
+  - rake spec
+
+sudo: false
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby-head
+    - rvm: rbx-2
+    - rvm: 2.4.1 # because of https://bugs.ruby-lang.org/issues/13537
+
+notifications:
+  irc: "irc.freenode.org#pry"
+  recipients:
+    - jrmair@gmail.com
+
+branches:
+  only:
+    - master

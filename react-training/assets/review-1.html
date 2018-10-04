@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+</head>
+<body>
+    <div id="view"></div>
+</body>
+<!--need to use babel to work with jsx-->
+<script type="text/babel">
+
+    let NameEntry = React.createClass({
+        getInitialState: function (){
+            return { disabled : true};
+        },
+        getDefaultProps : function () { return {'label': 'Name:'}; },
+        // update method
+        setDisabled : function (disabled){
+            this.setState({
+                'disabled' : disabled
+            })
+        },
+        enable : function () {
+            this.setDisabled(false)
+        },
+        // render
+        render : function () {
+            return (
+                <div>
+                    <p>{this.props.label}</p>
+                    <input type="text" ref="name" disabled={this.state.disabled} />
+                    <button onClick={this.enable}>Edit</button>
+                </div>
+            );
+        }
+    });
+
+    // create classes
+    let FullNameEntry = React.createClass({
+    render : function () {
+    return (
+    <div>
+        <NameEntry ref="firstName" label='First Name:' />
+        <NameEntry res="lastName" label='Last Name:' />
+        <p>Hello {this.refs.firstName.state.disabled} {this.refs.lastName.state.disabled}</p>
+    </div>
+    );
+    }
+    });
+
+
+    // place react component o the page
+    ReactDOM.render(
+    <FullNameEntry />, document.getElementById('view'));
+
+</script>
+</html>

@@ -1,0 +1,58 @@
+https://facebook.github.io/react/
+Documentation
+https://facebook.github.io/react/docs/getting-started.html
+
+Tutorial
+https://www.sitepoint.com/getting-started-react-jsx/
+
+Video tutorials
+https://www.bigbinary.com/videos/keep-up-with-reactjs/react-life-cycle-methods-in-depth
+
+building native apps with React native
+https://facebook.github.io/react-native/
+Tutorial and starter for WebPack:
+http://webpack.github.io/
+Reflux
+https://github.com/reflux/refluxjs
+Comparing Flux and Reflux
+http://spoike.ghost.io/deconstructing-reactjss-flux/
+Redux:
+https://github.com/dwyl/learn-redux/blob/master/egghead.io_video_tutorial_notes.md
+
+xml get:
+http://services.aonaware.com/DictService/DictService.asmx/Define?word=hello
+http://iheartquotes.com/api/v1/random?max_characters=256&max_lines=10	
+
+Text (NY trasnport data):
+http://web.mta.info/status/serviceStatus.txt
+
+JSON:
+http://extjs.org.cn/extjs/examples/grid/survey.html
+http://api.flickr.com/services/feeds/photos_public.gne?tags=dogs&format=json
+https://twitter.com/users/fidelity.json?callback=handleResponse
+http://api.openweathermap.org/data/2.5/weather?q=dublin,ie&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+
+Facebook
+https://graph.facebook.com/{fbID}/picture?type=normal
+
+Babel REPL: 
+https://babeljs.io/repl/
+html to jsx: 
+http://magic.reactjs.net/htmltojsx.htm
+
+jQuery CDN
+http://code.jquery.com/jquery-latest.js
+
+Useful sites:
+caniuse.com
+builtwith.com
+jsperf.com
+jsfiddle.net
+https://jsbin.com/
+http://codepen.io/#
+http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/
+spritecow.com
+mrdoob.com
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh/related

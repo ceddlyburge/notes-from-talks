@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+   <input type="text" onblur="showValue()" value="Bob">
+  </body>
+<script>
+const showValue = () =>  {
+  console.log(event.target.getAttribute('value')); // returns "Bob" since it's an HTML attribute'
+  console.log(event.target.value); // returns whatever is the current value since it's a DOM property'
+
+}
+</script>
+</html>

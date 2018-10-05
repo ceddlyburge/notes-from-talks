@@ -1,0 +1,11 @@
+# Crafting monoids in your software
+
+I should look out for opportunities to use these. money and cashflow look possible.
+
+Ora class that returns a lot of combinations of things, which could just return the individual things and have a monoid function, so that callers can combine them as they want.
+
+Can do it with division by including nan in the set
+
+average and standard deviation can kind of become monoids by storing the subsequents bits (eg sum, count), which are monoids, and the doing the operation to get the average at the end.
+
+there is a book on living document that hes written that I could look at

@@ -38,5 +38,5 @@ functional mapping
 user jouneys / interaction via mockups
 - once per week / when building new stuff
 
-tdd
 - daily
+tdd

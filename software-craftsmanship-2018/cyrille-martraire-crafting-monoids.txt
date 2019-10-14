@@ -2,7 +2,7 @@
 
 I should look out for opportunities to use these. money and cashflow look possible.
 
-Ora class that returns a lot of combinations of things, which could just return the individual things and have a monoid function, so that callers can combine them as they want.
+Or a class that returns a lot of combinations of things, which could just return the individual things and have a monoid function, so that callers can combine them as they want.
 
 Can do it with division by including nan in the set
 

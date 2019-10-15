@@ -20,7 +20,7 @@ framework designer
 - provide libraries not frameworks to try and keep consistency
 
 the librarian
-- most document everything
+- must document everything
 - risk management theatre is a fun term.
 - is documentation best way to communicate
 
@@ -53,7 +53,7 @@ embrace architectural fitness functions (recommends building evolutionary archit
 - often won't have absolute numbers (but the relative / change in numbers is still useful)
 
 unit tests are fitness functions, can use them
-size of commits (related to coupling)
+size of commits (related to coupling). I already do this, check me out.
 number of releases
 performance ones are easy
 size of change per releases

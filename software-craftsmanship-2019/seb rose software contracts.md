@@ -10,7 +10,7 @@ function on an interface
 
 length of bolt could be an issue depending on context. (not enough space to tightnen)
 
-same with bolt with a shank, might not be thick enough to get past the shane.
+same with bolt with a shank, might not be thick enough to get past the shank.
 
 something implied by the name of the function on an interface (eg add)
 

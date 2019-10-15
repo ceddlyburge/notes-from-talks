@@ -1,8 +1,8 @@
-big design up front is bad, but not design up front is even worse
+big design up front is bad, but no design up front is even worse
 
-simon fives people a functional spec, and asks them to draw an architecture diagram
+simon gives people a functional spec, and asks them to draw an architecture diagram
 
-then asks if the diagram addresses the spec, and if you would but the solution.
+then asks if the diagram addresses the spec, and if you would buy the solution.
 
 whiteboard / post it note designs don't work
 

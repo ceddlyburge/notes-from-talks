@@ -4,7 +4,7 @@ uses cucumber
 uses screen play pattern
 uses serenity, which supports screen play pattern. there is also a javascript version
 
-screenpla approach is to model user interface rather than user interface
+screenplay approach is to model user interface rather than use interface
 - I think this is similar to something nat pryce presented, he wrote a translation language for the tests
 - I think he also then used the translation langue in the ui and the back end etc
 

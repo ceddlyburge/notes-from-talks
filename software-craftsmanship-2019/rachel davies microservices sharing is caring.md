@@ -1,4 +1,4 @@
-tes
+tes (this is a company name)
 50 devs, full stack but all javascript
 200 microservices
 remote first culture

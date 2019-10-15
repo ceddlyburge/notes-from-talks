@@ -10,9 +10,9 @@ places contain 0 or more tokens (state). little dots inside the circle
 
 vertical bar / rectangles are a transition.
 - can be enabled or disabled.
-- to be enabled must have a place pointing to it with at least one tokens
+- to be enabled must have a place pointing to it with at least one token
 - transitions presumably move the tokens along
-- transition move one token from each of the things pointing at them.
+- transition move one token from each of the things pointing at them. One token can move to two places, its not a physical representation, so can split into multiple copies of itself kind of thing.
 
 tokens are inside of a place and are moved by the transitions
 - one token moves at a time
@@ -39,6 +39,6 @@ recommends living documentation by cyrille from last year
 
 try annd connect modelling tools to your software, so that living documentation can be generated.
 
-the tool that aslak wrote takes input the xml from the petri net model, and from the output of the test. The test must output this file, its a simple dsl created for the purpose.
+the tool that aslak wrote takes xml input from the petri net model, and from the output of the test. The test must output this file, its a simple dsl created for the purpose.
 
 I could mention living documentation in customertestsexcel. could see if can bring in for any new stuff this year.

@@ -6,7 +6,7 @@ tdd doesn't tell you that the design is good, but they do tell you when they are
 
 similar for scrum
 
-feedback without an action is not a loop, uts just bad news. experts know what to do with the feedback, but beginners do not.
+feedback without an action is not a loop, its just bad news. experts know what to do with the feedback, but beginners do not.
 
 drawbacks of feedback loops
 - create coupling between parts of a systems
@@ -19,7 +19,7 @@ instability
 
 exception tracking is better feedback than code coverage. were doing ok here, half of companies don't track this.
 
-how frequently do you obserce users using your software? Its not enough to ask, you have to observe. were doing ok here as well, but we should probably make it first class. Tend to do it when doing support at the moment, and its a side benefit rather than the main point.
+how frequently do you observe users using your software? Its not enough to ask, you have to observe. were doing ok here as well, but we should probably make it first class. Tend to do it when doing support at the moment, and its a side benefit rather than the main point.
 
 This is expensive to do, so often gets ignored as a metric. But maybe its justified when you think about what decisions it could inform.
 

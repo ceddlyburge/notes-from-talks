@@ -11,3 +11,5 @@ took several days to generate the code. the created code was bad.
 use mutation testing. property based testing.
 
 hypothesis does property based testing in python.
+
+machine learning, like programming, is about feedback and iteration

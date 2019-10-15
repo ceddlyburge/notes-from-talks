@@ -36,6 +36,6 @@ run static analysis on your code
 
 can use "owasp dependency check" to check 3rd party code
 
-want to scan the container you are running on as well really. maybe Clair can do this.
+want to scan the container you are running on as well really. maybe `Clair` can do this.
 
 we should think more about security
